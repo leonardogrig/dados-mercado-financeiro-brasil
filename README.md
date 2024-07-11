@@ -32,8 +32,6 @@ Este documento é fornecido apenas para fins informativos e não constitui acons
 
 ---
 
-- [Dados Gerais CVM](#dados-gerais-csv)
-
 ## Dados Gerais CVM (CSV)
 
 ### URL
