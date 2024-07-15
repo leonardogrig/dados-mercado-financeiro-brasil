@@ -27,8 +27,8 @@ Este documento é fornecido apenas para fins informativos e não constitui acons
 - [CDI Diário [Bacen]](#cdi-diário-bacen)
 - [CDI Mês [Bacen]](#cdi-mês-bacen)
 - [Selic Mês [Bacen]](#selic-mês-bacen)
-- [IGP-M Mês [Bacen]](#igp-m-mês-bacen)
 - [TR Mês [Bacen]](#tr-mês-bacen)
+- [IGP-M Mês [Bacen]](#igp-m-mês-bacen)
 
 ---
 
@@ -547,27 +547,6 @@ A série histórica da taxa Selic mensal fornecida pelo Banco Central do Brasil 
 
 ---
 
-## IGP-M Mês [Bacen]
-
-### Endpoint
-
-`https://api.bcb.gov.br/dados/serie/bcdata.sgs.189/dados?formato=json`
-
-### Descrição
-
-A série histórica do IGP-M mensal fornecida pelo Banco Central do Brasil (Bacen). Este endpoint retorna os valores mensais do Índice Geral de Preços - Mercado (IGP-M), um indicador amplamente utilizado para reajustes de contratos, tarifas públicas e aluguéis no Brasil, com dados disponíveis em formato JSON.
-
-### Tipo
-
-```typescript
-{
-  data: string;
-  valor: number;
-}
-```
-
----
-
 ## TR Mês [Bacen]
 
 ### Endpoint
@@ -584,6 +563,27 @@ A série histórica da Taxa Referencial (TR) mensal fornecida pelo Banco Central
 {
   data: string;
   dataFim: string;
+  valor: number;
+}
+```
+
+---
+
+## IGP-M Mês [Bacen]
+
+### Endpoint
+
+`https://api.bcb.gov.br/dados/serie/bcdata.sgs.189/dados?formato=json`
+
+### Descrição
+
+A série histórica do IGP-M mensal fornecida pelo Banco Central do Brasil (Bacen). Este endpoint retorna os valores mensais do Índice Geral de Preços - Mercado (IGP-M), um indicador amplamente utilizado para reajustes de contratos, tarifas públicas e aluguéis no Brasil, com dados disponíveis em formato JSON.
+
+### Tipo
+
+```typescript
+{
+  data: string;
   valor: number;
 }
 ```
